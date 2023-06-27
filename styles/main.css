@@ -79,8 +79,8 @@ a {
 }
 
 #profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 270px;
+    height: 270px;
     object-fit: cover;
     border-radius: 50%;
 }
