@@ -29,3 +29,5 @@ function myFunction_set_light() {
     r.style.setProperty('--mainBorderColor', myFunction_get('--mainBorderColor-light'));
     r.style.setProperty('--mainBgColor', myFunction_get('--mainBgColor-light'));
 }
+
+myFunction_set_dark();
