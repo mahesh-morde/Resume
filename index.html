@@ -5,41 +5,58 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mahesh Shashikant Morde</title>
+    <link rel="icon" href="https://mojomox.com/images/favicons/apple-touch-icon.png" type="image/x-icon"> 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
+
+    <section id="theme--selector">
+        <div class="container">
+            <label class="switch">
+                <input class="togglesw" type="checkbox" checked="" onchange="toggleTheme()">
+                <div class="indicator left">🌚</div>
+                <div class="indicator right"> 🌞</div>
+                <div class="button-toggle"></div>
+            </label>
+        </div>
+    </section>
+
     <div id="container--main">
-        <section id="theme--selector">
-             <button id="button--dark" class="card--techstack" type="button" 
-                onclick="myFunction_set_dark()">Swich to dark theme</button>
-            <button id="button--light" class="card--techstack" hidden type="button"
-                onclick="myFunction_set_light()">Swich to light theme</button>           
-        </section>
-        
         <section id="wrapper--hero" class="section--page">
             <img id="profile-pic" src="./assets/images/profile_pic.png">
             <div>
                 <h1 id="user-name" >Mahesh Morde</h1>
                         <h7 class="animate-charcter" style="margin:1px;"> Full Stack Developer</h7>
                 <p id="bio"> Catalog Associate @ <a href="https://www.amazon.in" target="_blank"
-                        rel="noopener noreferrer">Amazon</a> - RBS (Retail Business Services) Europe Marketplace.</p>
+                        rel="noopener noreferrer">Amazon</a> - RBS (Retail Business Services) <br> Europe Marketplace.</p>
                 <p id="email">
-                    <a href="mailto:maheshmorde2511@gmail.com">📨 </a>maheshmorde2511@gmail.com
+                    <a href="mailto:maheshmorde2511@gmail.com">📨 <i style="color: rgb(255, 1, 60); font-weight: bold;" class="fa-solid fa-envelope-open-text"></i> </a>maheshmorde2511@gmail.com
                 </p>
-                <p id="phone--sms"><a href="tel:+919766228503">📞 </a> <a href="https://wa.me/919766228503"
-                        target="_blank" rel="noopener noreferrer">🗨️ </a>+91 9766228503</p>
+                <p id="phone--sms"><a href="tel:+919766228503"><i style="color: blue; font-weight: bold;" class="fa fa-phone" aria-hidden="true"></i> </a> <a href="https://wa.me/919766228503"
+                        target="_blank" rel="noopener noreferrer"><i style="color: green; font-weight: bold;" class="fa-brands fa-whatsapp"></i> </a>+91 9766228503</p>
             </div>
         </section>
 
         <section class="section--page">
             <div id="socials--list">
-                <a href="https://www.linkedin.com/in/mahesh-morde" target="_blank" rel="noopener noreferrer" style="color:#0da2b8">Linkedin</a>
-                <a href="https://sites.google.com/view/mahesh-morde" target="_blank" rel="noopener noreferrer" style="color:#0da2b8">Portfolio</a>
-                <a href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer" style="color:#0da2b8">Download Resume</a>
+                <a href="https://www.linkedin.com/in/mahesh-morde" target="_blank" rel="noopener noreferrer" style="color:#0da2b8"><button class="btn">Linkedin</button></a>
+                <a href="https://sites.google.com/view/mahesh-morde" target="_blank" rel="noopener noreferrer" style="color:#0da2b8"><button class="btn">Portfolio</button></a>
+                <a href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer" style="color:#0da2b8"><div class="button" data-tooltip="Size: 264KB">
+                    <div class="button-wrapper">
+                      <div class="text">Download Resume</div>
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                        </span>
+                      </div>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -59,22 +76,68 @@
 
         <section class="section--page">
             <h2>Tech stack</h2>
-
+    
             <div id="wrapper--techstack__items">
-                <div class="card--techstack"><span>Python</span></div>
-                <div class="card--techstack"><span>Django</span></div>
-                <div class="card--techstack"><span>Java</span></div>
-                <div class="card--techstack"><span>HTML</span></div>
-                <div class="card--techstack"><span>CSS</span></div>
-                <div class="card--techstack"><span>Bootstrap</span></div>
-                <div class="card--techstack"><span>Spring</span></div>
-                <div class="card--techstack"><span>Spring Boot</span></div>
-                <div class="card--techstack"><span>Angular</span></div>
-                <div class="card--techstack"><span>MySQL</span></div>
-                <div class="card--techstack"><span>GIT</span></div>
-                <div class="card--techstack"><span>Docker</span></div>
-                <div class="card--techstack"><span>Amazon Web Services (AWS)</span></div>
-                
+                <div class="card--techstack">
+                    <span>Python</span>
+                    <img src="https://camo.githubusercontent.com/dd8b0601cdfefe534a6a26f4c29c7f8a5fcfc315002655f519c73121f7bad8bc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f707974686f6e2f707974686f6e2d6f726967696e616c2e737667" />
+                </div>
+                <div class="card--techstack">
+                    <span>Django</span>
+                    <img src="https://cdn.worldvectorlogo.com/logos/django.svg" />
+                </div>
+                <div class="card--techstack">
+                    <span>Java</span>
+                    <img src="https://camo.githubusercontent.com/20ffa1c9a31e2c991c8b52b0cb7be938de51db4b7a9299658fef28efb0cc845a/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176612f6a6176612d6f726967696e616c2e737667" />
+                </div>
+                <div class="card--techstack">
+                    <span>Angular</span>
+                    <img src="https://angular.io/assets/images/logos/angular/angular.svg" />
+                </div>
+                <div class="card--techstack">
+                    <span>SpringBoot</span>
+                    <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" />
+                </div>
+                <div class="card--techstack">
+                    <span>HTML</span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" />
+                </div>
+                <div class="card--techstack">
+                    <span>CSS</span>
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" />
+                </div>
+                <div class="card--techstack">
+                    <span>BootStrap</span>
+                    <img src="https://cdn.dribbble.com/users/595/screenshots/14417863/media/8913cc1aae5de0cc7afdd1727e5582c0.png?resize=400x300&vertical=center" />
+                </div>
+                <div class="card--techstack">
+                    <span>Mysql</span>
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" />
+                </div>
+                <div class="card--techstack">
+                    <span>SQLite</span>
+                    <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" />
+                </div>
+                <div class="card--techstack">
+                    <span>Git</span>
+                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" />
+                </div>
+                <div class="card--techstack">
+                    <span>Docker</span>
+                    <img src="https://dwglogo.com/wp-content/uploads/2017/09/1300px-Docker_container_engine_logo.png" />
+                </div>
+                <div class="card--techstack">
+                    <span>AWS</span>
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                </div>
+                <div class="card--techstack">
+                    <span>Linux</span>
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" />
+                </div>
+                <div class="card--techstack">
+                    <span>Postman</span>
+                    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" />
+                </div>
             </div>
         </section>
         
