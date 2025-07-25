@@ -492,7 +492,7 @@ h2::after {
 }
 
 .achievement-card {
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    background: linear-gradient(135deg, var(--accentColor), var(--mainLinkColor));
     border-radius: 16px;
     padding: 2rem;
     text-align: center;
