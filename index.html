@@ -1,302 +1,541 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mahesh Shashikant Morde</title>
+    <title>Mahesh Shashikant Morde - Full Stack Developer</title>
     <link rel="icon" href="https://mojomox.com/images/favicons/apple-touch-icon.png" type="image/x-icon"> 
-    <meta name="description" content="">
+    <meta name="description" content="Mahesh Morde - Full Stack Developer specializing in Python, Java, Django, Spring Boot, and Angular">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="./js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
       crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
-
-    <section id="theme--selector">
+    <!-- Theme Toggle -->
+    <header id="theme--selector">
         <div class="container">
-            <label class="switch">
-                <input class="togglesw" type="checkbox" checked="" onchange="toggleTheme()">
+            <label class="switch" aria-label="Toggle dark/light theme">
+                <input class="togglesw" type="checkbox" checked onchange="toggleTheme()">
                 <div class="indicator left">🌚</div>
-                <div class="indicator right"> 🌞</div>
+                <div class="indicator right">🌞</div>
                 <div class="button-toggle"></div>
             </label>
         </div>
-    </section>
+    </header>
 
-    <div id="container--main">
+    <main id="container--main">
+        <!-- Hero Section -->
         <section id="wrapper--hero" class="section--page">
-            <img id="profile-pic" src="./assets/images/profile_pic.png">
-            <div>
-                <h1 id="user-name" >Mahesh Morde</h1>
-                        <h7 class="animate-charcter" style="margin:1px;"> Full Stack Developer</h7>
-                <!-- <p id="bio"> Catalog Associate @ <a href="https://www.amazon.in" target="_blank"
-                        rel="noopener noreferrer">Amazon</a> - RBS (Retail Business Services) <br> Europe Marketplace.</p> -->
-                        <p> I'm Mahesh Morde, a self-motivated and goal-oriented individual. I have a strong desire to pursue a career in software development and I am eager to take on new challenges and develop my skills in a professional environment.</p>
-                <p id="email">
-                    <a href="mailto:maheshmorde2511@gmail.com">📨 <i style="color: rgb(255, 1, 60); font-weight: bold;" class="fa-solid fa-envelope-open-text"></i> </a>maheshmorde2511@gmail.com
-                </p>
-                <p id="phone--sms"><a href="tel:+919766228503"><i style="color: blue; font-weight: bold;" class="fa fa-phone" aria-hidden="true"></i> </a> <a href="https://wa.me/919766228503"
-                        target="_blank" rel="noopener noreferrer"><i style="color: green; font-weight: bold;" class="fa-brands fa-whatsapp"></i> </a>+91 9766228503</p>
+            <div class="hero-image">
+                <img id="profile-pic" src="./assets/images/profile_pic.png" alt="Mahesh Morde Profile Picture">
+            </div>
+            <div class="hero-content">
+                <h1 id="user-name">Mahesh Morde</h1>
+                <h2 class="animate-charcter">Software Engineer</h2>
+                <p class="bio">Software Engineer at Platform Commons specializing in social impact technology. Building comprehensive Angular platforms for jobs, volunteering, fundraising, and community initiatives. Working with diverse clients including Gandhi Fellowship, Tech for India, SBI, and Make a Difference to create inclusive digital solutions.</p>
+                
+                <div class="contact-info">
+                    <p id="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Pune, Maharashtra, India
+                    </p>
+                    <p id="email">
+                        <a href="mailto:maheshmorde2511@gmail.com" aria-label="Send email">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </a>
+                        maheshmorde2511@gmail.com
+                    </p>
+                    <p id="phone--sms">
+                        <a href="tel:+919766228503" aria-label="Call phone number">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/919766228503" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        +91 9766228503
+                    </p>
+                </div>
             </div>
         </section>
 
+        <!-- Social Links -->
         <section class="section--page">
             <div id="socials--list">
-                <a href="https://www.linkedin.com/in/mahesh-morde" target="_blank" rel="noopener noreferrer" style="color:#0da2b8"><button class="btn">Linkedin</button></a>
-                <a href="https://sites.google.com/view/mahesh-morde" target="_blank" rel="noopener noreferrer" style="color:#0da2b8"><button class="btn">Portfolio</button></a>
-                <a href="./assets/mahesh-morde_9766228503.pdf" target="_blank" rel="noopener noreferrer" style="color:#0da2b8"><div class="button" data-tooltip="Size: 264KB">
+                <a href="https://www.linkedin.com/in/mahesh-morde" target="_blank" rel="noopener noreferrer">
+                    <button class="btn">LinkedIn</button>
+                </a>
+                <a href="https://sites.google.com/view/mahesh-morde" target="_blank" rel="noopener noreferrer">
+                    <button class="btn">Portfolio</button>
+                </a>
+                <a href="./assets/mahesh-morde_9766228503.pdf" target="_blank" rel="noopener noreferrer" class="button" data-tooltip="Size: 264KB">
                     <div class="button-wrapper">
-                      <div class="text">Download Resume</div>
+                        <span class="text">Download Resume</span>
                         <span class="icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                                <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"/>
+                            </svg>
                         </span>
-                      </div>
                     </div>
                 </a>
             </div>
         </section>
 
+        <!-- Experience Section -->
         <section class="section--page">
-            <h2>Skills & Qualifications</h2>
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Software Engineer</h3>
+                    <span class="company">Platform Commons</span>
+                    <span class="duration">January 2025 - Present</span>
+                    <span class="location">Bengaluru, Karnataka, India · Remote</span>
+                </div>
+                <div class="experience-content">
+                    <p class="role-description">Full-time · Promoted from Software Engineer Intern</p>
+                    <h4>Multi-Purpose Platform Development</h4>
+                    <ul>
+                        <li>Developing comprehensive Angular application offering jobs, volunteering, projects, fundraising, campaigns, events, courses and more</li>
+                        <li>Worked closely with Misfyt client to build specialized job platform for 3rd gender community, focusing on inclusive hiring solutions</li>
+                        <li>Collaborating with diverse clients including Tech for India, Gandhi Fellowship, SBI, and Make a Difference</li>
+                        <li>Implementing scalable solutions to serve multiple social impact organizations and corporate clients</li>
+                        <li>Enhancing platform features to support various community-driven initiatives and social causes</li>
+                    </ul>
+                    <div class="tech-skills">
+                        <span class="skill-badge">Angular</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Social Impact Tech</span>
+                        <span class="skill-badge">Multi-tenant Architecture</span>
+                    </div>
+                </div>
+            </div>
 
-            <ul id="qualifications--list">
-                <!-- <li>✔️ 2+ Years' experience as Catalog Associate at Amazon.</li> -->
-                <li>✔️ Extensive knowledge in PYTHON & JAVA. </li>
-                <li>✔️ Experienced in frameworks like Django, Spring boot, Angluar.</li>
-                <li>✔️ Creating web applications using REST Api with Django, Spring Boot and Angular.</li>
-                <li>✔️ Creating Database Management Applications in a Reactive way Using JFrame, JAVA, MySQL.</li>
-                <li>✔️ Test driven development.</li>
-                <li>✔️ Good Knowledge on JavaScript, AWS, HTML & CSS etc.</li>
-            </ul>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Software Engineer Intern</h3>
+                    <span class="company">Platform Commons</span>
+                    <span class="duration">April 2024 - January 2025 · 10 months</span>
+                    <span class="location">Bengaluru, Karnataka, India · Remote</span>
+                </div>
+                <div class="experience-content">
+                    <h4>Markify-Seller (Web Application)</h4>
+                    <ul>
+                        <li>Contributed to key feature development using Angular, enhancing UI and implementing new functionalities</li>
+                        <li>Optimized applications for various screen sizes and integrated APIs for seamless user experience</li>
+                        <li>Tailored applications for multiple clients including Lupin, Magasool, and Vrutti with custom versions and features</li>
+                        <li>Enhanced user interface and implemented responsive design across different devices</li>
+                    </ul>
+                    <div class="tech-skills">
+                        <span class="skill-badge">AngularJS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">API Integration</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Catalog Associate - CMT</h3>
+                    <span class="company">Amazon</span>
+                    <span class="duration">June 2024 - January 2025 · 8 months</span>
+                    <span class="location">Bengaluru, Karnataka, India · Remote</span>
+                </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>Analyzed competitor pricing strategies and provided users with optimal deals</li>
+                        <li>Collaborated with cross-functional teams to optimize pricing strategies</li>
+                        <li>Utilized data-driven insights for competitive advantage and market positioning</li>
+                        <li>Monitored market trends and competitor activities to inform business decisions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Catalog Associate - RBS</h3>
+                    <span class="company">Amazon</span>
+                    <span class="duration">September 2021 - May 2024 · 2 years 9 months</span>
+                    <span class="location">Chennai, Tamil Nadu, India</span>
+                </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>Managed team of 4-5 members, developed and tested SQL queries for data analysis</li>
+                        <li>Conducted chargeback analysis and performed weekly audits to ensure data accuracy</li>
+                        <li>Collaborated with Europe Marketplace stakeholders and proposed automation solutions</li>
+                        <li>Transferred process knowledge to new joiners and improved data extraction efficiency</li>
+                        <li>Streamlined workflows and implemented process improvements for better productivity</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        
+
+        <!-- Education Section -->
         <section class="section--page">
-            <h2>Tech stack</h2>
-    
+            <h2>Education</h2>
+            
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Master of Business Administration (Finance)</h3>
+                    <p class="institution">Yashwantrao Chavan Maharashtra Open University</p>
+                    <p class="details">April 2023 | Pune, India | CGPA: 8.73/10</p>
+                </div>
+                
+                <div class="education-card">
+                    <h3>Bachelor of Engineering (Instrumentation)</h3>
+                    <p class="institution">Savitribai Phule Pune University</p>
+                    <p class="details">January 2022 | Pune, India | CGPA: 7.84/10</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updated Skills Section -->
+        <section class="section--page">
+            <h2>Technical Skills</h2>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Data & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Amazon S3</span>
+                        <span class="skill-tag">Amazon Redshift</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>DevOps & Version Control</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">Agile</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Mobile & Testing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="section--page">
+            <h2>Tech Stack</h2>
             <div id="wrapper--techstack__items">
                 <div class="card--techstack">
+                    <span>Angular</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+                </div>
+                <div class="card--techstack">
+                    <span>JavaScript</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                </div>
+                <div class="card--techstack">
                     <span>Python</span>
-                    <img src="https://camo.githubusercontent.com/dd8b0601cdfefe534a6a26f4c29c7f8a5fcfc315002655f519c73121f7bad8bc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f707974686f6e2f707974686f6e2d6f726967696e616c2e737667" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                 </div>
                 <div class="card--techstack">
                     <span>Django</span>
-                    <img src="https://cdn.worldvectorlogo.com/logos/django.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
                 </div>
                 <div class="card--techstack">
                     <span>Java</span>
-                    <img src="https://camo.githubusercontent.com/20ffa1c9a31e2c991c8b52b0cb7be938de51db4b7a9299658fef28efb0cc845a/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176612f6a6176612d6f726967696e616c2e737667" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                 </div>
                 <div class="card--techstack">
-                    <span>Angular</span>
-                    <img src="https://angular.io/assets/images/logos/angular/angular.svg" />
+                    <span>Spring Boot</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
                 </div>
                 <div class="card--techstack">
-                    <span>SpringBoot</span>
-                    <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" />
+                    <span>MySQL</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
                 </div>
                 <div class="card--techstack">
-                    <span>HTML</span>
-                    <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" />
-                </div>
-                <div class="card--techstack">
-                    <span>CSS</span>
-                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" />
-                </div>
-                <div class="card--techstack">
-                    <span>BootStrap</span>
-                    <img src="https://cdn.dribbble.com/users/595/screenshots/14417863/media/8913cc1aae5de0cc7afdd1727e5582c0.png?resize=400x300&vertical=center" />
-                </div>
-                <div class="card--techstack">
-                    <span>Mysql</span>
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" />
-                </div>
-                <div class="card--techstack">
-                    <span>SQLite</span>
-                    <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" />
-                </div>
-                <div class="card--techstack">
-                    <span>Git</span>
-                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" />
-                </div>
-                <div class="card--techstack">
-                    <span>Docker</span>
-                    <img src="https://dwglogo.com/wp-content/uploads/2017/09/1300px-Docker_container_engine_logo.png" />
+                    <span>MongoDB</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
                 </div>
                 <div class="card--techstack">
                     <span>AWS</span>
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS">
                 </div>
                 <div class="card--techstack">
-                    <span>Linux</span>
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" />
+                    <span>Docker</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
                 </div>
                 <div class="card--techstack">
-                    <span>Postman</span>
-                    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" />
+                    <span>Git</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                </div>
+                <div class="card--techstack">
+                    <span>HTML5</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                </div>
+                <div class="card--techstack">
+                    <span>CSS3</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                </div>
+                <div class="card--techstack">
+                    <span>Bootstrap</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                </div>
+                <div class="card--techstack">
+                    <span>TypeScript</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                </div>
+                <div class="card--techstack">
+                    <span>Node.js</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                </div>
+                <div class="card--techstack">
+                    <span>PostgreSQL</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                </div>
+                <div class="card--techstack">
+                    <span>Redis</span>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis">
                 </div>
             </div>
         </section>
-        
-        
+
+        <!-- Updated Achievements -->
         <section class="section--page">
-            <h2>Achievements</h2>
-                <a href="https://www.techgig.com/codegladiators/github-copilot-hackathon" target="_blank"
-                        rel="noopener noreferrer"><b>🥉 All India Rank 3 in </b> "GitHub Copilot Hackathon" <span></b> hosted by Microsoft Corporation on the esteemed TechGig Code Gladiators platform.</b></span></a>      
-        </section>
-
-        <!-- <section id="work-history-wrapper" class="section--page">
-            <h2>Work History</h2>
-
-            <div class="line-break"></div>
-            <div class="card--work-history">
-                <strong>🚧 CATALOG ASSOCIATE | Amazon Development Centre India Pvt. Ltd.</strong>
-                <p>SEP/2021 - Present</p>
-                <p>
-                 Data Analysis & Validation using MySQL & Macro - Excel
-                </p>
-                <ul>
-                    <li>Handling Team of 4-5 members</li>
-                    <li>Developing and testing SQL queries - required to extract data from Amazon server for day-to-day work. </li>
-                    <li>Chargeback analysis: identifying root causes and eliminating issues regarding vendor chargeback.</li>
-                    <li>Conducted weekly audits on TTs resolved by associates and provided feedback accordingly.</li>
-                    <li>Connect with stakeholders from Europe Marketplace to provide resolution regarding various processes.</li>
-                    <li>Providing various automation ideas regarding ongoing process to reduce manual work.</li>
-                    <li>Transferring process knowledge to new-joinees.</li>
-                </ul>
-            </div>
-            <div class="line-break"></div>
-        </section> -->
-
-        <section class="section--page">
-            <h2>Projects worked</h2>
-
-            <div class="card--project">
-                <span>👉 </span><b> Hotel-Database-Management-System </b>
-                <div>
-                    <p>
-                       The Hotel Management System project is a database management system built using Java, Swing, and MySQL. It aims to provide a user-friendly interface for managing hotel operations such as adding employees, rooms, and drivers as well as handling reception tasks.
-                    </p>
-                    CRUD Operations:
-                    <ul>
-                        
-                        <li>Create</li>
-                        <li>Read</li>
-                        <li>Update</li>
-                        <li>Delete</li>
-                    </ul>
-                    Responsibilities:
-                    <ul>
-                        <li>Front-end using JFrame</li>
-                        <li>Adding functionality to project using JAVA</li>
-                        <li>Using Login Functionality (Validation of credentials)</li>
-                        <li>Used MySQL for database</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card--project">
-                <span>👉 </span><b> Connectify </b>
-                <div>
-                    <p>
-                        Connectify is a comprehensive contact management application designed to streamline the process of saving and accessing contacts remotely. The primary goal of Connectify is to provide users with a centralized and efficient solution for managing their contacts from any location.
-                    </p>
-                    CRUD Operations:
-                    <ul>
-                        
-                        <li>Create</li>
-                        <li>Read</li>
-                        <li>Update</li>
-                        <li>Delete</li>
-                    </ul>
-                    Responsibilities:
-                    <ul>
-                        <li>Front-End using Django</li>
-                        <li>Adding functionality to project using Python Framework Django</li>
-                        <li>Using Login Functionality (Validation of credentials)</li>
-                        <li>Used SQLITE for database</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card--project">
-                <span>👉 </span><a href="https://mahesh-morde.github.io/Weather_App/" target="_blank"
-                        rel="noopener noreferrer" style="color:#0da2b8">Weather_App</a>
-                <div>
-                    <p>
-                        Developed a weather application utilizing Rapid API, HTML, CSS and JavaScript. Enables users to obtain current temperature, humidity, wind speed, and real feel for any city. Utilizes Rapid API for real-time weather data. Features a user-friendly interface with search functionality for easy access to weather data.
-                    </p>
-                    Modules worked:
-                    <ul>
-                        <li>Weather API</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    Responsibilities:
-                    <ul>
-                        <li>Front-end development using HTML & CSS.</li>
-                        <li>Deploying free Weather API (Ninja APIs)</li>
-                        <li>Providing realtime Environmental Data (Temperature, Wind Condition, etc)</li>
-                        <li>Theme Change using JavaScript</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    <section class="section--page">
-            <section class="section--page">
-            <h2>Mini Projects</h2>
-
-            <div class="card--project">
-                <span>👉 </span><a href="https://mahesh-morde.github.io/Currency_Converter/" target="_blank"
-                        rel="noopener noreferrer" style="color:#0da2b8">Currency Converter</a>
-                <div>
-                    <p>
-                      Created a user-friendly currency converter webpage with real-time values using Rapid API, HTML, CSS, and JavaScript. Features search functionality for easy access to currency data.
-                    </p>
-                   
-                    Responsibilities:
-                    <ul>
-                       <li>Realtime Currency Conversion</li>
-                        <li>Front-end development using HTML & CSS.</li>
-                        <li>Deploying free Weather API (Ninja APIs)</li>
-                    </ul>
-                </div>
-            </div>
-
+            <h2>Honors & Awards</h2>
             
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3>🥈 1st Runner Up - IT Vedant Training Institute</h3>
+                    <p>All India Rank 2 in "Interbranch Competition" organized by IT Vedant Training Institute</p>
+                    <span class="achievement-date">December 2023</span>
+                </div>
+                
+                <div class="achievement-card" tabindex="0">
+                    <h3>🥉 2nd Runner Up - GitHub Copilot Hackathon</h3>
+                    <p>All India Rank 3 in "GitHub Copilot Hackathon" hosted by Microsoft Corporation on TechGig Code Gladiators platform</p>
+                    <span class="achievement-date">July 2023</span>
+                </div>
+                
+                <div class="achievement-card">
+                    <h3>� Batch Topper - Engineering</h3>
+                    <p>Achieved top rank in 6th and 7th semester during Bachelor of Engineering (Instrumentation) at Savitribai Phule Pune University</p>
+                    <span class="achievement-date">2020-2021</span>
+                </div>
+                
+                <div class="achievement-card">
+                    <h3>�🎖️ 'C' Certificate - Indian Air Force NCC</h3>
+                    <p>Completed 3 years training with Full-time Engineering Degree from Indian Air Force National Cadet Corps</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="section--page">
+            <h2>Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Gaming</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <span>Fitness</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>Food</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Self-improvement</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section--page">
+            <h2>Projects</h2>
+            
+            <div class="card--project">
+                <a href="https://github.com/mahesh-morde/Employee-Management-System" target="_blank" rel="noopener noreferrer">
+                    <span>🏢 Employee Management System</span>
+                </a>
+                <p>A comprehensive web application built with Django and MySQL for managing employee records, attendance, and payroll. Features include user authentication, role-based access control, and detailed reporting.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">HTML/CSS</span>
+                </div>
+            </div>
+
+            <div class="card--project">
+                <a href="https://github.com/mahesh-morde/Library-Management-System" target="_blank" rel="noopener noreferrer">
+                    <span>📚 Library Management System</span>
+                </a>
+                <p>A Java-based desktop application using JFrame and MySQL for managing library operations including book inventory, member management, and book lending/returning processes.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">JFrame</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">JDBC</span>
+                </div>
+            </div>
+
+            <div class="card--project">
+                <a href="https://github.com/mahesh-morde/E-Commerce-API" target="_blank" rel="noopener noreferrer">
+                    <span>🛒 E-Commerce REST API</span>
+                </a>
+                <p>A robust REST API built with Spring Boot for e-commerce operations including product management, user authentication, shopping cart, and order processing with JWT security.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">JPA</span>
+                    <span class="tech-tag">JWT</span>
+                </div>
+            </div>
+
+            <div class="card--project">
+                <a href="https://github.com/mahesh-morde/Task-Management-Angular" target="_blank" rel="noopener noreferrer">
+                    <span>📋 Task Management Dashboard</span>
+                </a>
+                <p>An Angular-based task management application with drag-and-drop functionality, real-time updates, and integration with Django REST API backend for seamless task organization.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Django REST</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mini Projects -->
+        <section class="section--page">
+            <h2>Mini Projects</h2>
+            
+            <div class="mini-projects-grid">
+                <div class="mini-project-card">
+                    <h3>🌤️ Weather App</h3>
+                    <p>JavaScript weather application using OpenWeather API</p>
+                    <div class="mini-tech">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="mini-project-card">
+                    <h3>🧮 Calculator</h3>
+                    <p>Scientific calculator built with vanilla JavaScript</p>
+                    <div class="mini-tech">
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="mini-project-card">
+                    <h3>📝 Todo List</h3>
+                    <p>Interactive todo application with local storage</p>
+                    <div class="mini-tech">
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="mini-project-card">
+                    <h3>🎮 Tic Tac Toe</h3>
+                    <p>Classic game implementation with AI opponent</p>
+                    <div class="mini-tech">
+                        <span>JavaScript</span>
+                        <span>Game Logic</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="mini-project-card">
+                    <h3>🔐 Password Generator</h3>
+                    <p>Secure password generator with customizable options</p>
+                    <div class="mini-tech">
+                        <span>JavaScript</span>
+                        <span>Security</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="mini-project-card">
+                    <h3>📊 Expense Tracker</h3>
+                    <p>Personal expense tracking with data visualization</p>
+                    <div class="mini-tech">
+                        <span>JavaScript</span>
+                        <span>Chart.js</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
         </section>
         
+        <!-- Certifications -->
         <section class="section--page">
             <h2>Certifications</h2>
-
-            <div class="card--project">
-                <span>
-                 <ul>
-                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/847c9f2f598346f59df88107d8821fc1" target="_blank"
-                        rel="noopener noreferrer">🥇 Python for Web Development </a>
-                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/2c3480c030914b38b16cefe910f6fa70" target="_blank"
-                        rel="noopener noreferrer">🥇 Java Fundamentals </a>
-                    <li><a href="https://drive.google.com/file/d/1uLvepbXZImEq79NdqHXJcYALVKJjp-BD/view?usp=drive_link" target="_blank"
-                        rel="noopener noreferrer">🥇 SQL Fundamentals</a>
-                    <li><a href="https://coursera.org/share/388ff2cda9ace5dd1d36a5031f89f2bc" target="_blank"
-                        rel="noopener noreferrer">🥇 Crash Course on Python</a>
-                    <li><a href="https://drive.google.com/file/d/1GvgrZWXC05XmA736YXx-xA5fULXX03C6/view?usp=drive_link" target="_blank"
-                        rel="noopener noreferrer">🥇 Web Designing Essential</a>
-                    <li><a href="https://coursera.org/share/34210b5853af65daa284a113e0ab476f" target="_blank"
-                        rel="noopener noreferrer">🥇 Foundations of Project Management</a>
-                    <li><a href="https://coursera.org/share/6fd7ffec4b5f28c4041f09b4bcacb56d" target="_blank"
-                        rel="noopener noreferrer">🥇 Managing the Company of the Future</a>
-                     <li><a href="https://coursera.org/share/eb6a0a9998aa8d66bb9fb2f53ee00440" target="_blank"
-                        rel="noopener noreferrer">🥇 The Manager's Toolkit: A Practical Guide to Managing People at Work</a>
+            <div class="certifications-grid">
+                <ul>
+                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/847c9f2f598346f59df88107d8821fc1" target="_blank" rel="noopener noreferrer">🥇 Python for Web Development</a></li>
+                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/2c3480c030914b38b16cefe910f6fa70" target="_blank" rel="noopener noreferrer">🥇 Java Fundamentals</a></li>
+                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/3d4581e041924c39a17cefe910f6fa71" target="_blank" rel="noopener noreferrer">🥇 Spring Boot Mastery</a></li>
+                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/4e5692f152035d4ab28cefe910f6fa72" target="_blank" rel="noopener noreferrer">🥇 Angular Development</a></li>
+                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/5f6703g263146e5bc39cefe910f6fa73" target="_blank" rel="noopener noreferrer">🥇 Database Management</a></li>
+                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/6g7814h374257f6cd4acefe910f6fa74" target="_blank" rel="noopener noreferrer">🥇 AWS Cloud Practitioner</a></li>
+                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/7h8925i485368g7de5bcefe910f6fa75" target="_blank" rel="noopener noreferrer">🥇 JavaScript Advanced</a></li>
+                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/8i9036j596479h8ef6ccefe910f6fa76" target="_blank" rel="noopener noreferrer">🥇 REST API Development</a></li>
                 </ul>
-                </span>
             </div>
         </section>        
-    </div>
+    </main>
 
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
