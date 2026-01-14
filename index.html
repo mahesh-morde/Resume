@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <canvas id="antigravity-canvas"></canvas>
     <!-- Theme Toggle -->
     <header id="theme--selector">
         <div class="container">
@@ -36,12 +37,12 @@
     <main id="container--main">
         <!-- Hero Section -->
         <section id="wrapper--hero" class="section--page">
-            <div class="hero-image">
+            <div class="hero-image hidden-section">
                 <img id="profile-pic" src="./assets/images/profile_pic.png" alt="Mahesh Morde Profile Picture">
             </div>
-            <div class="hero-content">
+            <div class="hero-content hidden-section">
                 <h1 id="user-name">Mahesh Morde</h1>
-                <h2 class="animate-charcter">Software Engineer</h2>
+                <h2 class="animate-charcter typing-cursor"><span id="typing-text"></span></h2>
                 <p class="bio">Software Engineer at Platform Commons specializing in social impact technology. Building
                     comprehensive Angular platforms for jobs, volunteering, fundraising, and community initiatives.
                     Working with diverse clients including Gandhi Fellowship, Tech for India, SBI, and Make a Difference
@@ -74,7 +75,7 @@
 
         <!-- Social Links -->
         <section class="section--page">
-            <div id="socials--list">
+            <div id="socials--list" class="hidden-section">
                 <a href="https://www.linkedin.com/in/mahesh-morde" target="_blank" rel="noopener noreferrer">
                     <button class="btn">LinkedIn</button>
                 </a>
@@ -101,7 +102,7 @@
         <section class="section--page">
             <h2>Professional Experience</h2>
 
-            <div class="experience-card">
+            <div class="experience-card hidden-section">
                 <div class="experience-header">
                     <h3>Software Engineer</h3>
                     <span class="company">Platform Commons Foundation</span>
@@ -140,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="experience-card">
+            <div class="experience-card hidden-section">
                 <div class="experience-header">
                     <h3>Associate Engineer</h3>
                     <span class="company">Amazon Development Centre India Pvt. Ltd</span>
@@ -182,13 +183,13 @@
             <h2>Education</h2>
 
             <div class="education-grid">
-                <div class="education-card">
+                <div class="education-card hidden-section">
                     <h3>Master of Business Administration (Finance)</h3>
                     <p class="institution">Yashwantrao Chavan Maharashtra Open University</p>
                     <p class="details">April 2023 | Pune, India | CGPA: 8.73/10</p>
                 </div>
 
-                <div class="education-card">
+                <div class="education-card hidden-section">
                     <h3>Bachelor of Engineering (Instrumentation)</h3>
                     <p class="institution">Savitribai Phule Pune University</p>
                     <p class="details">January 2022 | Pune, India | CGPA: 7.84/10</p>
@@ -200,7 +201,7 @@
         <section class="section--page">
             <h2>Technical Skills</h2>
             <div class="skills-categories">
-                <div class="skill-category">
+                <div class="skill-category hidden-section">
                     <h3>Frontend Development</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Angular</span>
@@ -269,7 +270,7 @@
         <section class="section--page">
             <h2>Tech Stack</h2>
             <div id="wrapper--techstack__items">
-                <div class="card--techstack">
+                <div class="card--techstack hidden-section">
                     <span>Angular</span>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
                         alt="Angular">
@@ -360,7 +361,7 @@
             <h2>Honors & Awards</h2>
 
             <div class="achievements-grid">
-                <div class="achievement-card">
+                <div class="achievement-card hidden-section">
                     <h3>🥉 2nd Runner Up - GitHub Copilot Hackathon</h3>
                     <p>All India Rank 3 in "GitHub Copilot Hackathon" hosted by Microsoft Corporation on TechGig Code
                         Gladiators platform</p>
@@ -392,7 +393,7 @@
         <section class="section--page">
             <h2>Interests</h2>
             <div class="interests-grid">
-                <div class="interest-item">
+                <div class="interest-item hidden-section">
                     <i class="fa-solid fa-gamepad"></i>
                     <span>Gaming</span>
                 </div>
@@ -415,7 +416,7 @@
         <section class="section--page">
             <h2>Projects</h2>
 
-            <div class="card--project">
+            <div class="card--project hidden-section">
                 <a href="https://github.com/mahesh-morde/Employee-Management-System" target="_blank"
                     rel="noopener noreferrer">
                     <span>🏢 Employee Management System</span>
@@ -481,7 +482,7 @@
             <h2>Mini Projects</h2>
 
             <div class="mini-projects-grid">
-                <div class="mini-project-card">
+                <div class="mini-project-card hidden-section">
                     <h3>🌤️ Weather App</h3>
                     <p>JavaScript weather application using OpenWeather API</p>
                     <div class="mini-tech">
