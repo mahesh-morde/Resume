@@ -22,6 +22,14 @@
 
 <body>
     <canvas id="antigravity-canvas"></canvas>
+
+    <!-- Decorative Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <!-- Theme Toggle -->
     <header id="theme--selector">
         <div class="container">
@@ -37,38 +45,46 @@
     <main id="container--main">
         <!-- Hero Section -->
         <section id="wrapper--hero" class="section--page">
-            <div class="hero-image hidden-section">
-                <img id="profile-pic" src="./assets/images/profile_pic.png" alt="Mahesh Morde Profile Picture">
-            </div>
-            <div class="hero-content hidden-section">
+            <div class="hero-header hidden-section">
                 <h1 id="user-name">Mahesh Morde</h1>
                 <h2 class="animate-charcter typing-cursor"><span id="typing-text"></span></h2>
-                <p class="bio">Software Engineer at Platform Commons specializing in social impact technology. Building
-                    comprehensive Angular platforms for jobs, volunteering, fundraising, and community initiatives.
-                    Working with diverse clients including Gandhi Fellowship, Tech for India, SBI, and Make a Difference
-                    to create inclusive digital solutions.</p>
+            </div>
 
-                <div class="contact-info">
-                    <p id="location">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Pune, Maharashtra, India
-                    </p>
-                    <p id="email">
-                        <a href="mailto:maheshmorde2511@gmail.com" aria-label="Send email">
-                            <i class="fa-solid fa-envelope-open-text"></i>
-                        </a>
-                        maheshmorde2511@gmail.com
-                    </p>
-                    <p id="phone--sms">
-                        <a href="tel:+919766228503" aria-label="Call phone number">
-                            <i class="fa fa-phone"></i>
-                        </a>
-                        <a href="https://wa.me/919766228503" target="_blank" rel="noopener noreferrer"
-                            aria-label="WhatsApp">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        +91 9766228503
-                    </p>
+            <div class="hero-main">
+                <div class="hero-image hidden-section">
+                    <img id="profile-pic" src="./assets/images/profile image.png"
+                        alt="Mahesh Morde Professional Portrait">
+                </div>
+                <div class="hero-content hidden-section">
+                    <p class="bio">Software Engineer with 4 years of experience building scalable, responsive web
+                        applications using Angular, TypeScript, and REST APIs. Strong expertise in component-based
+                        architecture, API integration, and performance optimization. Proven ability to deliver
+                        enterprise-grade solutions in multi-tenant environments and improve operational efficiency
+                        through
+                        automation and clean UI/UX design.</p>
+
+                    <div class="contact-info">
+                        <p id="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Pune, Maharashtra, India
+                        </p>
+                        <p id="email">
+                            <a href="mailto:maheshmorde2511@gmail.com" aria-label="Send email">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </a>
+                            maheshmorde2511@gmail.com
+                        </p>
+                        <p id="phone--sms">
+                            <a href="tel:+919766228503" aria-label="Call phone number">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                            <a href="https://wa.me/919766228503" target="_blank" rel="noopener noreferrer"
+                                aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            +91 9766228503
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -106,72 +122,95 @@
                 <div class="experience-header">
                     <h3>Software Engineer</h3>
                     <span class="company">Platform Commons Foundation</span>
-                    <span class="duration">April 2024 - Present</span>
+                    <span class="duration">04/2024 – 03/2026</span>
                     <span class="location">Remote</span>
                 </div>
                 <div class="experience-content">
-                    <h4>Projects: VMS (Vendor Management System), Markify (Agri products related web Application)</h4>
-                    <p><strong>Clients:</strong> SBI Foundation, Lupin, Misfyt, Gandhi Fellowship, Make a Difference,
-                        Magasool</p>
-                    <p>As a Software Engineer, I have contributed to designing and developing scalable web applications
-                        for social-impact organizations and enterprise clients. I've worked on creating user-centric
-                        features, improving workflows, and building secure, multi-role platforms with strong focus on
-                        usability, performance, and maintainability.</p>
+                    <h4>Projects</h4>
                     <ul>
-                        <li>Delivered responsive and scalable web applications for social-impact and enterprise clients
-                        </li>
-                        <li>Developed profile management modules with update workflows and data validations</li>
-                        <li>Implemented structured, modular architecture to improve code maintainability and performance
-                        </li>
-                        <li>Integrated APIs to streamline data flow and system functionality</li>
-                        <li>Built secure role-based access for multi-level user operations (user/admin/super-admin)</li>
-                        <li>Contributed to multi-tenant platforms for diverse client requirements</li>
-                        <li>Improved usability by designing intuitive interfaces and consistent UI/UX patterns</li>
-                        <li>Delivered customized solutions for clients like Misfyt, Gandhi Fellowship, SBI Foundation,
-                            and Lupin</li>
-                        <li>Collaborated with cross-functional teams to ensure stable, high-quality feature delivery
+                        <li><strong>VMS (Vendor Management System):</strong> A multi-tenant web platform used by
+                            social-impact organizations to manage vendors, users, and role-based operations across
+                            multiple clients.</li>
+                        <li><strong>Markify:</strong> An agri-trading platform that enables farmers, FPOs, and
+                            warehouses to list, manage, and trade agricultural products for enterprise and NGO partners.
                         </li>
                     </ul>
-                    <div class="tech-skills">
+                    <p style="margin-top: 10px;"><strong>Clients:</strong> SBI Foundation, Lupin, Misfyt, Gandhi
+                        Fellowship, Make a Difference, Magasool, Seniors In Seva</p>
+
+                    <h4 style="margin-top: 15px;">Responsibilities:</h4>
+                    <ul>
+                        <li>Developed and maintained scalable Angular-based web applications using component-driven
+                            architecture, improving code reusability and maintainability.</li>
+                        <li>Designed and implemented multi-tenant architecture with role-based access control (RBAC) to
+                            support diverse client requirements.</li>
+                        <li>Built dynamic, responsive UI components using Angular, TypeScript, and Bootstrap to enhance
+                            user experience and accessibility.</li>
+                        <li>Integrated RESTful APIs for real-time data synchronization and seamless backend
+                            communication.</li>
+                        <li>Engineered form workflows with validations and reactive forms, ensuring data accuracy and
+                            improved user input handling.</li>
+                        <li>Optimized application performance through modular design, lazy loading, and efficient state
+                            handling (RxJS).</li>
+                        <li>Delivered customized feature enhancements based on client-specific requirements across
+                            multiple projects.</li>
+                        <li>Collaborated with cross-functional teams (product, backend, QA) to ensure high-quality,
+                            on-time feature delivery.</li>
+                        <li>Contributed to UI/UX standardization, improving consistency and usability across platforms.
+                        </li>
+                    </ul>
+
+                    <h4 style="margin-top: 15px;">Key Achievements:</h4>
+                    <ul>
+                        <li>Retained a high-risk client (Seniors in Seva) by delivering fully customized product
+                            enhancements within 1 week, converting a potential churn into continued partnership.</li>
+                        <li>Accelerated feature delivery timelines by implementing modular and reusable components,
+                            reducing development effort for new features.</li>
+                        <li>Enhanced platform security and access control by implementing robust role-based workflows
+                            across multi-level users (Admin/User/Super Admin).</li>
+                        <li>Improved user experience and adoption by redesigning UI components and ensuring consistent
+                            design patterns across applications.</li>
+                        <li>Delivered successful client-specific solutions for organizations like SBI Foundation, Lupin,
+                            and Gandhi Fellowship, strengthening long-term engagement.</li>
+                        <li>Enabled scalable multi-tenant support, allowing seamless onboarding of multiple clients on a
+                            single platform.</li>
+                    </ul>
+
+                    <div class="tech-skills" style="margin-top: 15px;">
                         <span class="skill-badge">Angular</span>
-                        <span class="skill-badge">JavaScript</span>
                         <span class="skill-badge">TypeScript</span>
-                        <span class="skill-badge">API Integration</span>
+                        <span class="skill-badge">RxJS</span>
+                        <span class="skill-badge">NgRx</span>
+                        <span class="skill-badge">Angular CLI</span>
+                        <span class="skill-badge">REST APIs</span>
                     </div>
                 </div>
             </div>
 
             <div class="experience-card hidden-section">
                 <div class="experience-header">
-                    <h3>Associate Engineer</h3>
+                    <h3>Catalog Associate</h3>
                     <span class="company">Amazon Development Centre India Pvt. Ltd</span>
-                    <span class="duration">09/2021 - 01/2025 (3 yrs 5 months)</span>
+                    <span class="duration">09/2021 - 03/2024 (2 yrs 5 months)</span>
                     <span class="location">Remote</span>
                 </div>
                 <div class="experience-content">
-                    <h4>Projects: Vendor Order Management System (VOMS), Catalog Quality Improvement System (CQIS)</h4>
-                    <ul>
-                        <li>VOMS is an internal Angular-based application designed to streamline large-scale vendor
-                            order placement and automated processing, ensuring seamless supply chain integration.</li>
-                        <li>CQIS & CPAF are data-driven frameworks used to enhance catalog accuracy and analyze global
-                            competitor pricing trends for strategic decision-making.</li>
-                    </ul>
                     <h4 style="margin-top: 10px;">Responsibilities:</h4>
                     <ul>
-                        <li>Developed and maintained an internal Angular application used by procurement teams to
-                            manage, validate, and place high-volume vendor orders.</li>
-                        <li>Built modular UI components to handle complex data grids and order-processing workflows,
-                            improving internal operational efficiency by 30%.</li>
-                        <li>Integrated RESTful APIs to synchronize real-time catalog data between the internal ordering
-                            system and Amazon's global databases.</li>
-                        <li>Collaborated on the Competitor Pricing Analysis Framework (CPAF) by developing scripts to
-                            automate data extraction and validation, reducing manual audit time.</li>
-                        <li>Implemented role-based dashboards within internal tools to provide regional managers with
-                            visibility into catalog quality metrics and pricing discrepancies.</li>
-                        <li>Led technical audits and mentored junior team members on workflow automation and best
-                            practices for maintaining data integrity at scale.</li>
-                        <li>Coordinated with cross-functional engineering teams to resolve system bottlenecks and ensure
-                            the stability of catalog improvement tools.</li>
+                        <li>Developed and maintained Angular-based internal applications for high-volume vendor order
+                            processing and catalog management.</li>
+                        <li>Built modular, data-driven UI components and workflows, improving operational efficiency by
+                            30%.</li>
+                        <li>Integrated RESTful APIs to enable real-time synchronization with Amazon’s global catalog
+                            systems.</li>
+                        <li>Automated data extraction and validation processes for competitor pricing analysis (CPAF),
+                            reducing manual effort.</li>
+                        <li>Designed role-based dashboards to provide insights into catalog quality and pricing metrics.
+                        </li>
+                        <li>Led technical audits and mentored team members, ensuring data accuracy and process
+                            standardization.</li>
+                        <li>Collaborated with cross-functional teams to resolve system bottlenecks and improve
+                            application stability.</li>
                     </ul>
                 </div>
             </div>
@@ -184,15 +223,21 @@
 
             <div class="education-grid">
                 <div class="education-card hidden-section">
-                    <h3>Master of Business Administration (Finance)</h3>
+                    <h3>MBA (Finance)</h3>
                     <p class="institution">Yashwantrao Chavan Maharashtra Open University</p>
-                    <p class="details">April 2023 | Pune, India | CGPA: 8.73/10</p>
+                    <p class="details">2021 – 2023 | Maharashtra, India</p>
                 </div>
 
                 <div class="education-card hidden-section">
-                    <h3>Bachelor of Engineering (Instrumentation)</h3>
+                    <h3>Java Full Stack Development Certification</h3>
+                    <p class="institution">IT Vedant Institute, Pune</p>
+                    <p class="details">2022 - 2023 | Maharashtra, India</p>
+                </div>
+
+                <div class="education-card hidden-section">
+                    <h3>Bachelor of Engineering</h3>
                     <p class="institution">Savitribai Phule Pune University</p>
-                    <p class="details">January 2022 | Pune, India | CGPA: 7.84/10</p>
+                    <p class="details">Government College of Engineering and Research, Avasari Khurd | 2017 – 2022</p>
                 </div>
             </div>
         </section>
@@ -205,7 +250,11 @@
                     <h3>Frontend Development</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">TypeScript</span>
                         <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">RxJS</span>
+                        <span class="skill-tag">NgRx</span>
+                        <span class="skill-tag">Angular CLI</span>
                         <span class="skill-tag">Bootstrap</span>
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
@@ -213,54 +262,46 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3>Backend Development</h3>
+                    <h3>Backend & AI Tools</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Spring Boot</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Data & Cloud</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Amazon S3</span>
-                        <span class="skill-tag">Amazon Redshift</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>DevOps & Version Control</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Linux</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SQL</span>
                         <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">Web Development</span>
-                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">GitHub Co-pilot</span>
+                        <span class="skill-tag">Google Antigravity</span>
+                        <span class="skill-tag">ChatGPT</span>
+                        <span class="skill-tag">Cursor</span>
+                        <span class="skill-tag">Augment Code</span>
+                        <span class="skill-tag">Amazon Q & Kiro</span>
+                        <span class="skill-tag">Cloud-AI</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Mobile & Testing</h3>
+                    <h3>Cloud & Databases</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">AWS (S3, EC2, Lambda, SQS)</span>
+                        <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools, Practices & Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git (GitHub, Bitbucket, GitLab)</span>
+                        <span class="skill-tag">CI/CD Pipelines</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">SPA</span>
+                        <span class="skill-tag">Reactive Forms</span>
+                        <span class="skill-tag">Lazy Loading</span>
+                        <span class="skill-tag">Dependency Injection</span>
+                        <span class="skill-tag">Code Review</span>
+                        <span class="skill-tag">Debugging</span>
+                        <span class="skill-tag">Cross-functional Collaboration</span>
+                        <span class="skill-tag">Stakeholder Management</span>
                     </div>
                 </div>
             </div>
@@ -363,8 +404,8 @@
             <div class="achievements-grid">
                 <div class="achievement-card hidden-section">
                     <h3>🥉 2nd Runner Up - GitHub Copilot Hackathon</h3>
-                    <p>All India Rank 3 in "GitHub Copilot Hackathon" hosted by Microsoft Corporation on TechGig Code
-                        Gladiators platform</p>
+                    <p>All India Rank 3 in "GitHub Copilot Hackathon" hosted by Microsoft on TechGig Code Gladiators
+                        platform</p>
                     <span class="achievement-date">July 2023</span>
                 </div>
 
@@ -372,19 +413,6 @@
                     <h3>🥈 1st Runner Up - IT Vedant Training Institute</h3>
                     <p>All India Rank 2 in "Interbranch Competition" organized by IT Vedant Training Institute</p>
                     <span class="achievement-date">December 2023</span>
-                </div>
-
-                <div class="achievement-card">
-                    <h3>🏆 Batch Topper - Engineering</h3>
-                    <p>Achieved top rank in 6th and 7th semester during Bachelor of Engineering (Instrumentation) at
-                        Savitribai Phule Pune University</p>
-                    <span class="achievement-date">2020-2021</span>
-                </div>
-
-                <div class="achievement-card">
-                    <h3>🎖️ 'C' Certificate - Indian Air Force NCC</h3>
-                    <p>Completed 3 years training with Full-time Engineering Degree from Indian Air Force National Cadet
-                        Corps</p>
                 </div>
             </div>
         </section>
@@ -549,22 +577,10 @@
             <h2>Certifications</h2>
             <div class="certifications-grid">
                 <ul>
-                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/847c9f2f598346f59df88107d8821fc1"
-                            target="_blank" rel="noopener noreferrer">🥇 Python for Web Development</a></li>
-                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/2c3480c030914b38b16cefe910f6fa70"
-                            target="_blank" rel="noopener noreferrer">🥇 Java Fundamentals</a></li>
-                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/3d4581e041924c39a17cefe910f6fa71"
-                            target="_blank" rel="noopener noreferrer">🥇 Spring Boot Mastery</a></li>
-                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/4e5692f152035d4ab28cefe910f6fa72"
-                            target="_blank" rel="noopener noreferrer">🥇 Angular Development</a></li>
-                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/5f6703g263146e5bc39cefe910f6fa73"
-                            target="_blank" rel="noopener noreferrer">🥇 Database Management</a></li>
-                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/6g7814h374257f6cd4acefe910f6fa74"
-                            target="_blank" rel="noopener noreferrer">🥇 AWS Cloud Practitioner</a></li>
-                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/7h8925i485368g7de5bcefe910f6fa75"
-                            target="_blank" rel="noopener noreferrer">🥇 JavaScript Advanced</a></li>
-                    <li><a href="https://courses.itvedant.skillsnetwork.site/certificates/8i9036j596479h8ef6ccefe910f6fa76"
-                            target="_blank" rel="noopener noreferrer">🥇 REST API Development</a></li>
+                    <li>Angular Fundamentals – Certificate from IT Vedant Institute</li>
+                    <li>Full Stack Development – Certificate from IT Vedant Institute</li>
+                    <li>Crash Course on Python - Certificate from IBM on Coursera</li>
+                    <li>Java Fundamentals – Certificate from IT Vedant Institute</li>
                 </ul>
             </div>
         </section>

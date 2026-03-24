@@ -7,27 +7,29 @@ function myFunction_get(propertyName) {
 
 function toggleTheme() {
     var toggleSwitch = document.querySelector('.togglesw');
+    const root = document.documentElement;
 
     if (toggleSwitch.checked) {
-        r.style.setProperty('--mainTextColor', myFunction_get('--mainTextColor-light'));
-        r.style.setProperty('--secondaryTextColor', myFunction_get('--secondaryTextColor-light'));
-        r.style.setProperty('--mainLinkColor', myFunction_get('--mainLinkColor-light'));
-        r.style.setProperty('--mainBorderColor', myFunction_get('--mainBorderColor-light'));
-        r.style.setProperty('--mainBgColor', myFunction_get('--mainBgColor-light'));
-        r.style.setProperty('--cardBgColor', myFunction_get('--cardBgColor-light'));
-        r.style.setProperty('--accentColor', myFunction_get('--accentColor-light'));
-        r.style.setProperty('--glass-border', myFunction_get('--glass-border-light'));
+        root.style.setProperty('--mainTextColor', 'var(--mainTextColor-light)');
+        root.style.setProperty('--secondaryTextColor', 'var(--secondaryTextColor-light)');
+        root.style.setProperty('--mainLinkColor', 'var(--mainLinkColor-light)');
+        root.style.setProperty('--mainBorderColor', 'var(--mainBorderColor-light)');
+        root.style.setProperty('--mainBgColor', 'var(--mainBgColor-light)');
+        root.style.setProperty('--cardBgColor', 'var(--cardBgColor-light)');
+        root.style.setProperty('--accentColor', 'var(--accentColor-light)');
+        root.style.setProperty('--glass-border', 'var(--glass-border-light)');
+        root.style.setProperty('--glow-color', 'var(--glow-color-light)');
     } else {
-        r.style.setProperty('--mainTextColor', myFunction_get('--mainTextColor-dark'));
-        r.style.setProperty('--secondaryTextColor', myFunction_get('--secondaryTextColor-dark'));
-        r.style.setProperty('--mainLinkColor', myFunction_get('--mainLinkColor-dark'));
-        r.style.setProperty('--mainBorderColor', myFunction_get('--mainBorderColor-dark'));
-        r.style.setProperty('--mainBgColor', myFunction_get('--mainBgColor-dark'));
-        r.style.setProperty('--cardBgColor', myFunction_get('--cardBgColor-dark'));
-        r.style.setProperty('--accentColor', myFunction_get('--accentColor-dark'));
-        r.style.setProperty('--glass-border', myFunction_get('--glass-border-dark'));
+        root.style.setProperty('--mainTextColor', 'var(--mainTextColor-dark)');
+        root.style.setProperty('--secondaryTextColor', 'var(--secondaryTextColor-dark)');
+        root.style.setProperty('--mainLinkColor', 'var(--mainLinkColor-dark)');
+        root.style.setProperty('--mainBorderColor', 'var(--mainBorderColor-dark)');
+        root.style.setProperty('--mainBgColor', 'var(--mainBgColor-dark)');
+        root.style.setProperty('--cardBgColor', 'var(--cardBgColor-dark)');
+        root.style.setProperty('--accentColor', 'var(--accentColor-dark)');
+        root.style.setProperty('--glass-border', 'var(--glass-border-dark)');
+        root.style.setProperty('--glow-color', 'var(--glow-color-dark)');
     }
-
     // Update canvas if it exists
     if (typeof updateParticlesTheme === 'function') {
         // slight delay to allow CSS transition to update the computed value
@@ -80,7 +82,7 @@ function initTypingEffect() {
 
     if (!typedTextSpan) return;
 
-    const textArray = ["Software Engineer", "Full Stack Developer", "Angular Specialist", "Python Developer"];
+    const textArray = ["Software Engineer", "Front End Engineer", "Angular Specialist"];
     const typingDelay = 100;
     const erasingDelay = 100;
     const newTextDelay = 2000; // Delay between current and next text
