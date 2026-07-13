@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mahesh Shashikant Morde - Full Stack Developer</title>
-    <link rel="icon" href="https://mojomox.com/images/favicons/apple-touch-icon.png" type="image/x-icon">
+    <title>Mahesh Morde | Software Engineer</title>
+    <link rel="icon" href="./assets/images/profile image.png" type="image/png">
     <meta name="description"
-        content="Mahesh Morde - Full Stack Developer specializing in Python, Java, Django, Spring Boot, and Angular">
+        content="Mahesh Morde - Software Engineer with 4.9 years of experience specializing in Angular, TypeScript, Python, REST APIs, and AI-Assisted Development.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -21,22 +21,17 @@
 </head>
 
 <body>
-    <canvas id="antigravity-canvas"></canvas>
+    <!-- Premium Vercel/Linear Style Background Grid -->
+    <div class="bg-grid"></div>
+    <div class="glow-effect top-glow"></div>
+    <div class="glow-effect bottom-glow"></div>
 
-    <!-- Decorative Background Blobs -->
-    <div class="bg-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
-
-    <!-- Theme Toggle -->
     <header id="theme--selector">
         <div class="container">
             <label class="switch" aria-label="Toggle dark/light theme">
-                <input class="togglesw" type="checkbox" checked onchange="toggleTheme()">
-                <div class="indicator left">🌚</div>
-                <div class="indicator right">🌞</div>
+                <input class="togglesw" type="checkbox" onchange="toggleTheme()">
+                <div class="indicator left">🌞</div>
+                <div class="indicator right">🌚</div>
                 <div class="button-toggle"></div>
             </label>
         </div>
@@ -44,547 +39,403 @@
 
     <main id="container--main">
         <!-- Hero Section -->
-        <section id="wrapper--hero" class="section--page">
-            <div class="hero-header hidden-section">
-                <h1 id="user-name">Mahesh Morde</h1>
-                <h2 class="animate-charcter typing-cursor"><span id="typing-text"></span></h2>
-            </div>
-
-            <div class="hero-main">
-                <div class="hero-image hidden-section">
-                    <img id="profile-pic" src="./assets/images/profile image.png"
-                        alt="Mahesh Morde Professional Portrait">
+        <section id="wrapper--hero" class="section--page hidden-section">
+            <div class="hero-content-wrapper">
+                <div class="hero-image-container">
+                    <img id="profile-pic" src="./assets/images/profile image.png" alt="Mahesh Morde Professional Portrait">
+                    <div class="hero-image-ring"></div>
                 </div>
-                <div class="hero-content hidden-section">
-                    <p class="bio">Software Engineer with 4 years of experience building scalable, responsive web
-                        applications using Angular, TypeScript, and REST APIs. Strong expertise in component-based
-                        architecture, API integration, and performance optimization. Proven ability to deliver
-                        enterprise-grade solutions in multi-tenant environments and improve operational efficiency
-                        through
-                        automation and clean UI/UX design.</p>
-
+                <div class="hero-text">
+                    <div class="hero-header">
+                        <h1 id="user-name">Mahesh Morde</h1>
+                        <h2 class="animate-charcter typing-cursor"><span id="typing-text">Software Engineer | AI Advocate</span></h2>
+                    </div>
+                    <p class="bio">
+                        Software Engineer with <strong>4.9 years</strong> of experience developing scalable web applications using <strong>Angular, TypeScript, and REST APIs</strong>, with strong experience in AI-assisted development using tools like <strong>Claude, GitHub Copilot, ChatGPT, Antigravity, and Cloud AI</strong>. Experienced in building component-based architectures, integrating APIs, and using AI tools to accelerate development, automate repetitive coding tasks, debug issues, and improve overall code quality and productivity. Comfortable working in Agile environments and collaborating with cross-functional teams to deliver high-quality software solutions.
+                    </p>
                     <div class="contact-info">
-                        <p id="location">
-                            <i class="fa-solid fa-location-dot"></i>
-                            Pune, Maharashtra, India
-                        </p>
-                        <p id="email">
-                            <a href="mailto:maheshmorde2511@gmail.com" aria-label="Send email">
-                                <i class="fa-solid fa-envelope-open-text"></i>
-                            </a>
-                            maheshmorde2511@gmail.com
-                        </p>
-                        <p id="phone--sms">
-                            <a href="tel:+919766228503" aria-label="Call phone number">
-                                <i class="fa fa-phone"></i>
-                            </a>
-                            <a href="https://wa.me/919766228503" target="_blank" rel="noopener noreferrer"
-                                aria-label="WhatsApp">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                            +91 9766228503
-                        </p>
+                        <a href="https://www.linkedin.com/in/mahesh-morde" target="_blank" rel="noopener noreferrer" class="contact-pill">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:maheshmorde2511@gmail.com" aria-label="Send email" class="contact-pill">
+                            <i class="fa-solid fa-envelope"></i> maheshmorde2511@gmail.com
+                        </a>
+                        <a href="tel:+919766228503" aria-label="Call phone number" class="contact-pill">
+                            <i class="fa fa-phone"></i> +91 9766228503
+                        </a>
+                        <span class="contact-pill">
+                            <i class="fa-solid fa-location-dot"></i> Pune, Maharashtra
+                        </span>
+                    </div>
+
+                    <div id="socials--list">
+                        <a href="./assets/Mahesh Morde_Software Engineer_9766228503.pdf" target="_blank"
+                            rel="noopener noreferrer" class="button primary-btn">
+                            <span class="text">Download Resume</span>
+                            <span class="icon">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Social Links -->
-        <section class="section--page">
-            <div id="socials--list" class="hidden-section">
-                <a href="https://www.linkedin.com/in/mahesh-morde" target="_blank" rel="noopener noreferrer">
-                    <button class="btn">LinkedIn</button>
-                </a>
-                <a href="https://sites.google.com/view/mahesh-morde" target="_blank" rel="noopener noreferrer">
-                    <button class="btn">Portfolio</button>
-                </a>
-                <a href="./assets/Mahesh Morde_Software Engineer_9766228503.pdf" target="_blank"
-                    rel="noopener noreferrer" class="button" data-tooltip="Size: 264KB">
-                    <div class="button-wrapper">
-                        <span class="text">Download Resume</span>
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
-                                <path fill="currentColor" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="2"
-                                    d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
-                            </svg>
-                        </span>
-                    </div>
-                </a>
+        <!-- AI-Assisted Development Workflow Section -->
+        <section class="section--page hidden-section">
+            <div class="section-header">
+                <h2>AI-Assisted Development Workflow</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="ai-workflow-grid">
+                <div class="ai-card">
+                    <div class="ai-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Code Generation & Scaffolding</h3>
+                    <p>Use AI tools like Claude, Copilot, Antigravity, and Cloud AI for code generation and feature scaffolding.</p>
+                </div>
+                <div class="ai-card">
+                    <div class="ai-icon"><i class="fa-solid fa-bug-slash"></i></div>
+                    <h3>Intelligent Debugging</h3>
+                    <p>Use AI for debugging errors and identifying root causes efficiently.</p>
+                </div>
+                <div class="ai-card">
+                    <div class="ai-icon"><i class="fa-solid fa-recycle"></i></div>
+                    <h3>Code Refactoring</h3>
+                    <p>Use AI for refactoring code into reusable and optimized components.</p>
+                </div>
+                <div class="ai-card">
+                    <div class="ai-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Query & API Generation</h3>
+                    <p>Use AI for writing SQL queries, API integration code, and documentation.</p>
+                </div>
+                <div class="ai-card" style="grid-column: 1 / -1;">
+                    <div class="ai-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3>AI Pair Programming</h3>
+                    <p>Use AI as a pair programmer to dramatically improve development speed and code quality.</p>
+                </div>
             </div>
         </section>
 
         <!-- Experience Section -->
-        <section class="section--page">
-            <h2>Professional Experience</h2>
+        <section class="section--page hidden-section">
+            <div class="section-header">
+                <h2>Work Experience</h2>
+                <div class="header-line"></div>
+            </div>
 
-            <div class="experience-card hidden-section">
-                <div class="experience-header">
-                    <h3>Software Engineer</h3>
-                    <span class="company">Platform Commons Foundation</span>
-                    <span class="duration">04/2024 – 03/2026</span>
-                    <span class="location">Remote</span>
+            <div class="experience-timeline">
+                <!-- Role 1 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="exp-title-group">
+                            <h3>Software Engineer</h3>
+                            <span class="company">Platform Commons Foundation</span>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="duration"><i class="fa-regular fa-calendar"></i> 04/2024 – Present</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Remote</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="exp-projects">
+                            <h4>Projects</h4>
+                            <ul>
+                                <li><strong>VMS (Vendor Management System):</strong> A multi-tenant web platform used by social-impact organizations to manage vendors, users, and role-based operations across multiple clients.</li>
+                                <li><strong>Markify:</strong> An agri-trading platform that enables farmers, FPOs, and warehouses to list, manage, and trade agricultural products for enterprise and NGO partners.</li>
+                            </ul>
+                            <p class="clients-list"><strong>Clients:</strong> Government Of India, NITI Aayog, SBI Foundation, Lupin, Misfyt, Gandhi Fellowship, Make a Difference, Magasool, Seniors In Seva</p>
+                        </div>
+
+                        <h4>Responsibilities</h4>
+                        <ul class="responsibilities-list">
+                            <li>Developed and maintained scalable Angular-based web applications using component-driven architecture, improving code reusability and maintainability.</li>
+                            <li>Designed and implemented multi-tenant architecture with role-based access control (RBAC) to support diverse client requirements.</li>
+                            <li>Built dynamic, responsive UI components using Angular, TypeScript, and Bootstrap to enhance user experience and accessibility.</li>
+                            <li>Integrated RESTful APIs for real-time data synchronization and seamless backend communication.</li>
+                            <li>Engineered form workflows with validations and reactive forms, ensuring data accuracy and improved user input handling.</li>
+                            <li>Optimized application performance through modular design, lazy loading, and efficient state handling (RxJS).</li>
+                            <li>Delivered customized feature enhancements based on client-specific requirements across multiple projects.</li>
+                            <li>Collaborated with cross-functional teams (product, backend, QA) to ensure high-quality, on-time feature delivery.</li>
+                            <li>Contributed to UI/UX standardization, improving consistency and usability across platforms.</li>
+                        </ul>
+
+                        <h4>Key Achievements</h4>
+                        <ul class="achievements-list">
+                            <li>Retained a high-risk client (Seniors in Seva) by delivering fully customized product enhancements within 1 week, converting a potential churn into continued partnership.</li>
+                            <li>Accelerated feature delivery timelines by implementing modular and reusable components, reducing development effort for new features.</li>
+                            <li>Enhanced platform security and access control by implementing robust role-based workflows across multi-level users (Admin/User/Super Admin).</li>
+                            <li>Improved user experience and adoption by redesigning UI components and ensuring consistent design patterns across applications.</li>
+                            <li>Delivered successful client-specific solutions for organizations like SBI Foundation, Lupin, and Gandhi Fellowship, strengthening long-term engagement.</li>
+                            <li>Enabled scalable multi-tenant support, allowing seamless onboarding of multiple clients on a single platform.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="experience-content">
-                    <h4>Projects</h4>
-                    <ul>
-                        <li><strong>VMS (Vendor Management System):</strong> A multi-tenant web platform used by
-                            social-impact organizations to manage vendors, users, and role-based operations across
-                            multiple clients.</li>
-                        <li><strong>Markify:</strong> An agri-trading platform that enables farmers, FPOs, and
-                            warehouses to list, manage, and trade agricultural products for enterprise and NGO partners.
+
+                <!-- Role 2 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="exp-title-group">
+                            <h3>Catalog Associate</h3>
+                            <span class="company">Amazon Development Centre India Pvt. Ltd</span>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="duration"><i class="fa-regular fa-calendar"></i> 09/2021 – 03/2024 (2 yrs 5 mos)</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Remote</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <h4>Responsibilities</h4>
+                        <ul class="responsibilities-list">
+                            <li>Developed and maintained Angular-based internal applications for high-volume vendor order processing and catalog management.</li>
+                            <li>Built modular, data-driven UI components and workflows, improving operational efficiency by 30%.</li>
+                            <li>Integrated RESTful APIs to enable real-time synchronization with Amazon’s global catalog systems.</li>
+                            <li>Automated data extraction and validation processes for competitor pricing analysis (CPAF), reducing manual effort.</li>
+                            <li>Designed role-based dashboards to provide insights into catalog quality and pricing metrics.</li>
+                            <li>Led technical audits and mentored team members, ensuring data accuracy and process standardization.</li>
+                            <li>Collaborated with cross-functional teams to resolve system bottlenecks and improve application stability.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section--page hidden-section">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="skills-grid-premium">
+                <div class="skill-category-card">
+                    <div class="skill-icon-header"><i class="fa-brands fa-angular"></i> Frontend</div>
+                    <div class="skill-tags">
+                        <span>Angular</span><span>TypeScript</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>RxJS</span><span>NgRx</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-icon-header"><i class="fa-brands fa-python"></i> Backend & APIs</div>
+                    <div class="skill-tags">
+                        <span>Python</span><span>Django</span><span>REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-icon-header"><i class="fa-solid fa-database"></i> Databases</div>
+                    <div class="skill-tags">
+                        <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-icon-header"><i class="fa-brands fa-aws"></i> Cloud & DevOps</div>
+                    <div class="skill-tags">
+                        <span>AWS (S3, EC2, Lambda, SQS)</span><span>Docker</span><span>CI/CD Pipelines</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card">
+                    <div class="skill-icon-header"><i class="fa-solid fa-code-branch"></i> Development Tools</div>
+                    <div class="skill-tags">
+                        <span>Git</span><span>GitHub</span><span>Bitbucket</span><span>GitLab</span><span>Agile</span><span>Debugging</span><span>Code Review</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card highlighted-skill-card">
+                    <div class="skill-icon-header"><i class="fa-solid fa-robot"></i> AI-Assisted Development</div>
+                    <div class="skill-tags">
+                        <span class="ai-tag">GitHub Copilot</span><span class="ai-tag">Claude</span><span class="ai-tag">ChatGPT</span><span class="ai-tag">Antigravity</span><span class="ai-tag">Cloud AI</span><span class="ai-tag">Cursor</span><span class="ai-tag">Augment Code</span><span class="ai-tag">Amazon Q</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card" style="grid-column: 1 / -1;">
+                    <div class="skill-icon-header"><i class="fa-solid fa-layer-group"></i> Core Concepts & Practices</div>
+                    <div class="skill-tags">
+                        <span>Component-Based Architecture</span><span>SPA</span><span>Reactive Forms</span><span>Dependency Injection</span><span>Lazy Loading</span><span>Agile/Scrum</span><span>Cross-functional collaboration</span><span>Stakeholder management</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="section--page hidden-section">
+            <div class="section-header">
+                <h2>Honors & Achievements</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="achievements-bento">
+                <div class="bento-card trophy-card primary-trophy">
+                    <div class="trophy-icon">🏆</div>
+                    <h3>1st Runner Up</h3>
+                    <p class="competition">ET AutoTech Hackathon 2026</p>
+                    <p class="desc">South Asia's biggest AutoTech event. A large-scale innovation challenge focused on solving real-world problems in the automotive, software and manufacturing ecosystem using Artificial Intelligence (AI), data, and emerging technologies.</p>
+                    <div class="achievement-img-gallery">
+                        <img src="./assets/images/et_autotech_certificate_edited.jpg" alt="ET AutoTech Hackathon 2026 Certificate" class="achievement-img">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E22AQFGyNOolPwTTA/feedshare-shrink_1280/B4EZ8DyEv.H8AM-/0/1782474886489?e=1785369600&v=beta&t=8KSakxHJZc2jF4-legnRY-D-ywGVs2flMiGEOi1Fntk" alt="ET AutoTech Hackathon Event" class="achievement-img">
+                        <img src="./assets/images/presenting_idea.JPG" alt="Presenting Idea at ET AutoTech Hackathon" class="achievement-img">
+                    </div>
+                </div>
+
+                <div class="bento-card trophy-card">
+                    <div class="trophy-icon">🥈</div>
+                    <h3>2nd Runner Up (ALL INDIA RANK 3)</h3>
+                    <p class="competition">Microsoft GitHub Copilot Hackathon</p>
+                    <p class="desc">Hosted by Microsoft on TechGig Code Gladiators platform.</p>
+                    <img src="https://media.licdn.com/dms/image/v2/D4D22AQF-V4yV7SjomA/feedshare-image-high-res/feedshare-image-high-res/0/1690724018179?e=1785369600&v=beta&t=YsptV-mGCPdkfdpg4zDrFH3Yy_GdkZXrNNOgBTIss7Q" alt="TechGig Code Gladiators Hackathon Certificate" class="achievement-img">
+                </div>
+
+                <div class="bento-card trophy-card">
+                    <div class="trophy-icon">🥈</div>
+                    <h3>1st Runner Up (ALL INDIA RANK 2)</h3>
+                    <p class="competition">IT Vedant Training Institute</p>
+                    <p class="desc">"Interbranch Competition" organized by IT Vedant Training Institute.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Education (Bento Grid Style) -->
+        <section class="section--page hidden-section">
+            <div class="edu-cert-grid">
+                
+                <div class="certifications-section">
+                    <div class="section-header mini">
+                        <h2>Certifications</h2>
+                    </div>
+                    <ul class="cert-list">
+                        <li>
+                            <i class="fa-solid fa-certificate"></i>
+                            <div>
+                                <strong>Angular Fundamentals</strong>
+                                <span>Certificate from IT Vedant Institute</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i>
+                            <div>
+                                <strong>Full Stack Development</strong>
+                                <span>Certificate from IT Vedant Institute</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i>
+                            <div>
+                                <strong>Crash Course on Python</strong>
+                                <span>Certificate from IBM on Coursera</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i>
+                            <div>
+                                <strong>Java Fundamentals</strong>
+                                <span>Certificate from IT Vedant Institute</span>
+                            </div>
                         </li>
                     </ul>
-                    <p style="margin-top: 10px;"><strong>Clients:</strong> SBI Foundation, Lupin, Misfyt, Gandhi
-                        Fellowship, Make a Difference, Magasool, Seniors In Seva</p>
+                </div>
 
-                    <h4 style="margin-top: 15px;">Responsibilities:</h4>
-                    <ul>
-                        <li>Developed and maintained scalable Angular-based web applications using component-driven
-                            architecture, improving code reusability and maintainability.</li>
-                        <li>Designed and implemented multi-tenant architecture with role-based access control (RBAC) to
-                            support diverse client requirements.</li>
-                        <li>Built dynamic, responsive UI components using Angular, TypeScript, and Bootstrap to enhance
-                            user experience and accessibility.</li>
-                        <li>Integrated RESTful APIs for real-time data synchronization and seamless backend
-                            communication.</li>
-                        <li>Engineered form workflows with validations and reactive forms, ensuring data accuracy and
-                            improved user input handling.</li>
-                        <li>Optimized application performance through modular design, lazy loading, and efficient state
-                            handling (RxJS).</li>
-                        <li>Delivered customized feature enhancements based on client-specific requirements across
-                            multiple projects.</li>
-                        <li>Collaborated with cross-functional teams (product, backend, QA) to ensure high-quality,
-                            on-time feature delivery.</li>
-                        <li>Contributed to UI/UX standardization, improving consistency and usability across platforms.
-                        </li>
-                    </ul>
-
-                    <h4 style="margin-top: 15px;">Key Achievements:</h4>
-                    <ul>
-                        <li>Retained a high-risk client (Seniors in Seva) by delivering fully customized product
-                            enhancements within 1 week, converting a potential churn into continued partnership.</li>
-                        <li>Accelerated feature delivery timelines by implementing modular and reusable components,
-                            reducing development effort for new features.</li>
-                        <li>Enhanced platform security and access control by implementing robust role-based workflows
-                            across multi-level users (Admin/User/Super Admin).</li>
-                        <li>Improved user experience and adoption by redesigning UI components and ensuring consistent
-                            design patterns across applications.</li>
-                        <li>Delivered successful client-specific solutions for organizations like SBI Foundation, Lupin,
-                            and Gandhi Fellowship, strengthening long-term engagement.</li>
-                        <li>Enabled scalable multi-tenant support, allowing seamless onboarding of multiple clients on a
-                            single platform.</li>
-                    </ul>
-
-                    <div class="tech-skills" style="margin-top: 15px;">
-                        <span class="skill-badge">Angular</span>
-                        <span class="skill-badge">TypeScript</span>
-                        <span class="skill-badge">RxJS</span>
-                        <span class="skill-badge">NgRx</span>
-                        <span class="skill-badge">Angular CLI</span>
-                        <span class="skill-badge">REST APIs</span>
+                <div class="education-section">
+                    <div class="section-header mini">
+                        <h2>Education</h2>
                     </div>
-                </div>
-            </div>
-
-            <div class="experience-card hidden-section">
-                <div class="experience-header">
-                    <h3>Catalog Associate</h3>
-                    <span class="company">Amazon Development Centre India Pvt. Ltd</span>
-                    <span class="duration">09/2021 - 03/2024 (2 yrs 5 months)</span>
-                    <span class="location">Remote</span>
-                </div>
-                <div class="experience-content">
-                    <h4 style="margin-top: 10px;">Responsibilities:</h4>
-                    <ul>
-                        <li>Developed and maintained Angular-based internal applications for high-volume vendor order
-                            processing and catalog management.</li>
-                        <li>Built modular, data-driven UI components and workflows, improving operational efficiency by
-                            30%.</li>
-                        <li>Integrated RESTful APIs to enable real-time synchronization with Amazon’s global catalog
-                            systems.</li>
-                        <li>Automated data extraction and validation processes for competitor pricing analysis (CPAF),
-                            reducing manual effort.</li>
-                        <li>Designed role-based dashboards to provide insights into catalog quality and pricing metrics.
-                        </li>
-                        <li>Led technical audits and mentored team members, ensuring data accuracy and process
-                            standardization.</li>
-                        <li>Collaborated with cross-functional teams to resolve system bottlenecks and improve
-                            application stability.</li>
-                    </ul>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Education Section -->
-        <section class="section--page">
-            <h2>Education</h2>
-
-            <div class="education-grid">
-                <div class="education-card hidden-section">
-                    <h3>MBA (Finance)</h3>
-                    <p class="institution">Yashwantrao Chavan Maharashtra Open University</p>
-                    <p class="details">2021 – 2023 | Maharashtra, India</p>
-                </div>
-
-                <div class="education-card hidden-section">
-                    <h3>Java Full Stack Development Certification</h3>
-                    <p class="institution">IT Vedant Institute, Pune</p>
-                    <p class="details">2022 - 2023 | Maharashtra, India</p>
-                </div>
-
-                <div class="education-card hidden-section">
-                    <h3>Bachelor of Engineering</h3>
-                    <p class="institution">Savitribai Phule Pune University</p>
-                    <p class="details">Government College of Engineering and Research, Avasari Khurd | 2017 – 2022</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Updated Skills Section -->
-        <section class="section--page">
-            <h2>Technical Skills</h2>
-            <div class="skills-categories">
-                <div class="skill-category hidden-section">
-                    <h3>Frontend Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">RxJS</span>
-                        <span class="skill-tag">NgRx</span>
-                        <span class="skill-tag">Angular CLI</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <h3>MBA (Finance)</h3>
+                            <p class="uni">Yashwantrao Chavan Maharashtra Open University</p>
+                            <p class="meta">Distance Education | 2021 – 2023</p>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <h3>Bachelor of Engineering</h3>
+                            <p class="uni">Savitribai Phule Pune University</p>
+                            <p class="meta">Full-Time | Government College Of Engineering Awasari | 2017 – 2022</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Backend & AI Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">GitHub Co-pilot</span>
-                        <span class="skill-tag">Google Antigravity</span>
-                        <span class="skill-tag">ChatGPT</span>
-                        <span class="skill-tag">Cursor</span>
-                        <span class="skill-tag">Augment Code</span>
-                        <span class="skill-tag">Amazon Q & Kiro</span>
-                        <span class="skill-tag">Cloud-AI</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Cloud & Databases</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS (S3, EC2, Lambda, SQS)</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Docker</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Tools, Practices & Concepts</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git (GitHub, Bitbucket, GitLab)</span>
-                        <span class="skill-tag">CI/CD Pipelines</span>
-                        <span class="skill-tag">Agile/Scrum</span>
-                        <span class="skill-tag">SPA</span>
-                        <span class="skill-tag">Reactive Forms</span>
-                        <span class="skill-tag">Lazy Loading</span>
-                        <span class="skill-tag">Dependency Injection</span>
-                        <span class="skill-tag">Code Review</span>
-                        <span class="skill-tag">Debugging</span>
-                        <span class="skill-tag">Cross-functional Collaboration</span>
-                        <span class="skill-tag">Stakeholder Management</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tech Stack Section -->
-        <section class="section--page">
-            <h2>Tech Stack</h2>
-            <div id="wrapper--techstack__items">
-                <div class="card--techstack hidden-section">
-                    <span>Angular</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
-                        alt="Angular">
-                </div>
-                <div class="card--techstack">
-                    <span>JavaScript</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                        alt="JavaScript">
-                </div>
-                <div class="card--techstack">
-                    <span>Python</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                        alt="Python">
-                </div>
-                <div class="card--techstack">
-                    <span>Django</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
-                </div>
-                <div class="card--techstack">
-                    <span>Java</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                </div>
-                <div class="card--techstack">
-                    <span>Spring Boot</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-                        alt="Spring Boot">
-                </div>
-                <div class="card--techstack">
-                    <span>MySQL</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                </div>
-                <div class="card--techstack">
-                    <span>MongoDB</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                        alt="MongoDB">
-                </div>
-                <div class="card--techstack">
-                    <span>AWS</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
-                        alt="AWS">
-                </div>
-                <div class="card--techstack">
-                    <span>Docker</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-                        alt="Docker">
-                </div>
-                <div class="card--techstack">
-                    <span>Git</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                </div>
-                <div class="card--techstack">
-                    <span>HTML5</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                </div>
-                <div class="card--techstack">
-                    <span>CSS3</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                </div>
-                <div class="card--techstack">
-                    <span>Bootstrap</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                        alt="Bootstrap">
-                </div>
-                <div class="card--techstack">
-                    <span>TypeScript</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                        alt="TypeScript">
-                </div>
-                <div class="card--techstack">
-                    <span>Node.js</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                        alt="Node.js">
-                </div>
-                <div class="card--techstack">
-                    <span>PostgreSQL</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                        alt="PostgreSQL">
-                </div>
-                <div class="card--techstack">
-                    <span>Redis</span>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis">
-                </div>
-            </div>
-        </section>
-
-        <!-- Updated Achievements -->
-        <section class="section--page">
-            <h2>Honors & Awards</h2>
-
-            <div class="achievements-grid">
-                <div class="achievement-card hidden-section">
-                    <h3>🥉 2nd Runner Up - GitHub Copilot Hackathon</h3>
-                    <p>All India Rank 3 in "GitHub Copilot Hackathon" hosted by Microsoft on TechGig Code Gladiators
-                        platform</p>
-                    <span class="achievement-date">July 2023</span>
-                </div>
-
-                <div class="achievement-card">
-                    <h3>🥈 1st Runner Up - IT Vedant Training Institute</h3>
-                    <p>All India Rank 2 in "Interbranch Competition" organized by IT Vedant Training Institute</p>
-                    <span class="achievement-date">December 2023</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interests Section -->
-        <section class="section--page">
-            <h2>Interests</h2>
-            <div class="interests-grid">
-                <div class="interest-item hidden-section">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <span>Gaming</span>
-                </div>
-                <div class="interest-item">
-                    <i class="fa-solid fa-dumbbell"></i>
-                    <span>Fitness</span>
-                </div>
-                <div class="interest-item">
-                    <i class="fa-solid fa-utensils"></i>
-                    <span>Food</span>
-                </div>
-                <div class="interest-item">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <span>Self-improvement</span>
-                </div>
             </div>
         </section>
 
         <!-- Projects -->
-        <section class="section--page">
-            <h2>Projects</h2>
-
-            <div class="card--project hidden-section">
-                <a href="https://github.com/mahesh-morde/Employee-Management-System" target="_blank"
-                    rel="noopener noreferrer">
-                    <span>🏢 Employee Management System</span>
-                </a>
-                <p>A comprehensive web application built with Django and MySQL for managing employee records,
-                    attendance, and payroll. Features include user authentication, role-based access control, and
-                    detailed reporting.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Django</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">HTML/CSS</span>
-                </div>
+        <section class="section--page hidden-section">
+            <div class="section-header">
+                <h2>Personal Projects</h2>
+                <div class="header-line"></div>
             </div>
 
-            <div class="card--project">
-                <a href="https://github.com/mahesh-morde/Library-Management-System" target="_blank"
-                    rel="noopener noreferrer">
-                    <span>📚 Library Management System</span>
-                </a>
-                <p>A Java-based desktop application using JFrame and MySQL for managing library operations including
-                    book inventory, member management, and book lending/returning processes.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">JFrame</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">JDBC</span>
-                </div>
-            </div>
-
-            <div class="card--project">
-                <a href="https://github.com/mahesh-morde/E-Commerce-API" target="_blank" rel="noopener noreferrer">
-                    <span>🛒 E-Commerce REST API</span>
-                </a>
-                <p>A robust REST API built with Spring Boot for e-commerce operations including product management, user
-                    authentication, shopping cart, and order processing with JWT security.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">Spring Boot</span>
-                    <span class="tech-tag">JPA</span>
-                    <span class="tech-tag">JWT</span>
-                </div>
-            </div>
-
-            <div class="card--project">
-                <a href="https://github.com/mahesh-morde/Task-Management-Angular" target="_blank"
-                    rel="noopener noreferrer">
-                    <span>📋 Task Management Dashboard</span>
-                </a>
-                <p>An Angular-based task management application with drag-and-drop functionality, real-time updates, and
-                    integration with Django REST API backend for seamless task organization.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">Angular</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">Django REST</span>
-                    <span class="tech-tag">Bootstrap</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Mini Projects -->
-        <section class="section--page">
-            <h2>Mini Projects</h2>
-
-            <div class="mini-projects-grid">
-                <div class="mini-project-card hidden-section">
-                    <h3>🌤️ Weather App</h3>
-                    <p>JavaScript weather application using OpenWeather API</p>
-                    <div class="mini-tech">
-                        <span>JavaScript</span>
-                        <span>API</span>
-                        <span>CSS</span>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fa-regular fa-folder"></i> ComplyOS</h3>
+                        <div style="display: flex; gap: 12px;">
+                            <a href="https://github.com/mahesh-morde/ComplyOS" target="_blank" rel="noopener noreferrer" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://mahesh-morde.github.io/ComplyOS/" target="_blank" rel="noopener noreferrer" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <p>The Agentic Compliance Operating System Transforming complex SEBI regulations into structured, explainable, machine-actionable and auditable operational workflows using Agentic AI.</p>
+                    <div class="project-tech">
+                        <span>Agentic AI</span><span>React</span><span>TypeScript</span>
                     </div>
                 </div>
 
-                <div class="mini-project-card">
-                    <h3>🧮 Calculator</h3>
-                    <p>Scientific calculator built with vanilla JavaScript</p>
-                    <div class="mini-tech">
-                        <span>JavaScript</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fa-regular fa-folder"></i> VoltStream (EV Ecosystem)</h3>
+                        <div style="display: flex; gap: 12px;">
+                            <a href="https://github.com/mahesh-morde/Seamless-EV-Charging-Ecosyste" target="_blank" rel="noopener noreferrer" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://mahesh-morde.github.io/Seamless-EV-Charging-Ecosyste/links.html" target="_blank" rel="noopener noreferrer" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <p>A high-fidelity interactive dashboard prototype built for the ET AutoTech Hackathon 2026. Demonstrates a connected, interoperable charging platform solving network fragmentation and grid overload.</p>
+                    <div class="project-tech">
+                        <span>TypeScript</span><span>UI/UX</span><span>Hackathon</span>
                     </div>
                 </div>
 
-                <div class="mini-project-card">
-                    <h3>📝 Todo List</h3>
-                    <p>Interactive todo application with local storage</p>
-                    <div class="mini-tech">
-                        <span>JavaScript</span>
-                        <span>LocalStorage</span>
-                        <span>CSS</span>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fa-regular fa-folder"></i> NexusAI Finance</h3>
+                        <div style="display: flex; gap: 12px;">
+                            <a href="https://github.com/mahesh-morde/nextgen-finance" target="_blank" rel="noopener noreferrer" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://mahesh-morde.github.io/nextgen-finance/" target="_blank" rel="noopener noreferrer" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <p>Your Intelligent Financial Co-Pilot. A next-generation finance application leveraging AI for advanced financial insights and intelligent user interactions.</p>
+                    <div class="project-tech">
+                        <span>TypeScript</span><span>AI Agents</span><span>Finance</span>
                     </div>
                 </div>
 
-                <div class="mini-project-card">
-                    <h3>🎮 Tic Tac Toe</h3>
-                    <p>Classic game implementation with AI opponent</p>
-                    <div class="mini-tech">
-                        <span>JavaScript</span>
-                        <span>Game Logic</span>
-                        <span>CSS</span>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fa-regular fa-folder"></i> SBI Sakha AI</h3>
+                        <div style="display: flex; gap: 12px;">
+                            <a href="https://github.com/mahesh-morde/sbi-sakha-ai" target="_blank" rel="noopener noreferrer" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://mahesh-morde.github.io/sbi-sakha-ai/" target="_blank" rel="noopener noreferrer" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="mini-project-card">
-                    <h3>🔐 Password Generator</h3>
-                    <p>Secure password generator with customizable options</p>
-                    <div class="mini-tech">
-                        <span>JavaScript</span>
-                        <span>Security</span>
-                        <span>CSS</span>
-                    </div>
-                </div>
-
-                <div class="mini-project-card">
-                    <h3>📊 Expense Tracker</h3>
-                    <p>Personal expense tracking with data visualization</p>
-                    <div class="mini-tech">
-                        <span>JavaScript</span>
-                        <span>Chart.js</span>
-                        <span>CSS</span>
+                    <p>SBI Sakha AI Hackathon - Agentic AI for Customer Support. Focuses on transforming banking support via conversational AI agents and seamless query resolution.</p>
+                    <div class="project-tech">
+                        <span>SCSS</span><span>Customer Support</span><span>Agentic AI</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Certifications -->
-        <section class="section--page">
-            <h2>Certifications</h2>
-            <div class="certifications-grid">
-                <ul>
-                    <li>Angular Fundamentals – Certificate from IT Vedant Institute</li>
-                    <li>Full Stack Development – Certificate from IT Vedant Institute</li>
-                    <li>Crash Course on Python - Certificate from IBM on Coursera</li>
-                    <li>Java Fundamentals – Certificate from IT Vedant Institute</li>
-                </ul>
-            </div>
-        </section>
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mahesh Morde. Built with AI-Assisted Development.</p>
+    </footer>
+
+    <button id="scrollToTopBtn" class="scroll-top-btn" aria-label="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="./js/main.js"></script>
 </body>
