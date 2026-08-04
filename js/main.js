@@ -78,4 +78,48 @@ document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    // Dynamic Resume Download Filename logic
+    const downloadBtn = document.getElementById('download-resume-btn');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            
+            const date = new Date();
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = date.toLocaleString('default', { month: 'short' });
+            const dynamicFileName = `Mahesh Morde_Software Engineer_9766228503_${day}_${month}.pdf`;
+            
+            const fileUrl = downloadBtn.getAttribute('href');
+            
+            try {
+                // Fetch the file as a Blob to force download
+                const response = await fetch(fileUrl);
+                if (!response.ok) throw new Error('Network response was not ok');
+                const blob = await response.blob();
+                
+                // Create object URL and temporary anchor
+                const blobUrl = window.URL.createObjectURL(blob);
+                const tempLink = document.createElement('a');
+                tempLink.href = blobUrl;
+                tempLink.download = dynamicFileName;
+                document.body.appendChild(tempLink);
+                tempLink.click();
+                
+                // Cleanup
+                document.body.removeChild(tempLink);
+                window.URL.revokeObjectURL(blobUrl);
+            } catch (error) {
+                console.error('Download failed, falling back to standard link:', error);
+                // Fallback for local file:// testing where fetch might fail due to CORS
+                const tempLink = document.createElement('a');
+                tempLink.href = fileUrl;
+                tempLink.download = dynamicFileName;
+                tempLink.target = '_blank';
+                document.body.appendChild(tempLink);
+                tempLink.click();
+                document.body.removeChild(tempLink);
+            }
+        });
+    }
 });
