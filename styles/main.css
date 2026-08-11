@@ -359,7 +359,7 @@ body {
 /* AI Workflow Grid */
 .ai-workflow-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
 }
 
@@ -561,8 +561,12 @@ body {
 /* Bento Achievements */
 .achievements-bento {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
+}
+
+.achievements-bento .primary-trophy {
+    grid-column: 1 / -1;
 }
 
 .bento-card {
@@ -896,6 +900,11 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .ai-workflow-grid,
+    .achievements-bento {
+        grid-template-columns: 1fr;
+    }
+
     .hero-content-wrapper {
         flex-direction: column;
         text-align: center;
